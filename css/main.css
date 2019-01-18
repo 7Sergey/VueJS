@@ -1,19 +1,9 @@
-.grey {
-    background: gray;
-}
-
-.yellow {
-    background: yellow;
-}
-
-.pink {
-    background: pink;
-}
-
-.blue {
-    background: blue;
-}
-
-.red {
-    background: red;
+.car{
+    background: rgba(89, 0, 255, 0.123);
+    width: 30%;
+    border: 2px solid;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 1.2% 2%;
+    font-size: 1.1em;
 }

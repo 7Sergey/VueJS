@@ -9,13 +9,12 @@
     <script src="https://unpkg.com/vue"></script>
   
      <div id="app">
-        <button v-on:click="show = !show">Скрыть/Показать</button>  
-        <p v-if="show">{{message | uppercase}}</p>
-        <p v-else>{{ message | lowercase | capatilize}}</p>
-        <ul>
-            <li v-for="car,i in cars">{{i + 1}} - {{car.model}}, скорость:{{car.speed}}</li>
-        </ul>
+       <app-car></app-car>
      </div>
+     <div id="app2">
+            <hr>
+            <app-car></app-car>
+          </div>
 
     <script src="js/main.js"></script> 
 </body>
