@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">      
+     <title>VueJS</title> 
+     <link rel="stylesheet" href="css/main.css"   
+</head>
+<body>
+    <script src="https://unpkg.com/vue"></script>
+  
+     <div id="app">
+        <button v-on:click="show = !show">Скрыть/Показать</button>  
+        <p v-if="show">{{message | uppercase}}</p>
+        <p v-else>{{ message | lowercase | capatilize}}</p>
+        <ul>
+            <li v-for="car,i in cars">{{i + 1}} - {{car.model}}, скорость:{{car.speed}}</li>
+        </ul>
+     </div>
+
+    <script src="js/main.js"></script> 
+</body>
+</html>
